@@ -13,6 +13,9 @@ def jogar():
     cabeçalho()
     global jogada
     jogada = str(input('Escolha sua jogada: ')).lower().strip()
+    if jogada not in 'pedra papel tesoura':
+        print('Jogada inválida')
+        jogar()
     global computador
     computador = choice(['pedra', 'papel', 'tesoura'])
 
