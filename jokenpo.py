@@ -2,7 +2,7 @@ from random import choice
 from time import sleep
 
 def linha(num):
-    print('-='*num)
+    print('\033[31m-=\033[m'*num)
 
 def cabeçalho():
     linha(25)
